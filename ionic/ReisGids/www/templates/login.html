@@ -1,0 +1,20 @@
+<ion-view title="Login">
+    <ion-content overflow-scroll="true" padding="'true'" class="has-header">
+        <form class="list">
+            <ion-list>
+                <label class="item item-input" name="tbUsername">
+                    <span class="input-label">Email</span>
+                    <input type="text" placeholder="" ng-model="data.email">
+                </label>
+                <label class="item item-input" name="tbPassword">
+                    <span class="input-label">Password</span>
+                    <input type="password" placeholder="" ng-model="data.password">
+                </label>
+            </ion-list>
+            <div class="spacer" style="height: 40px;"></div>
+            <!--<a href="#/locations" class="button button-stable button-block" ng-click="authenticate()">Log in</a>-->
+            <button class="button button-stable button-block" ng-click="authenticate()">Log in</button>
+            <a href="#/register" class="button button-positive button-clear button-block">Of maak een account</a>
+        </form>
+    </ion-content>
+</ion-view>

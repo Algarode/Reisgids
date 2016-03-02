@@ -1,0 +1,17 @@
+<ion-view title="Bezienswaardigheden">
+    <ion-content overflow-scroll="true" padding="'true'" class="has-header">
+        <ion-list ng-repeat="location in locations | orderBy:'distance'">
+            <ion-item class="item-thumbnail-left" href="#/detail/{{location.id}}">
+                <img src="{{location.img}}">
+                <h2><b>{{location.name}}</b></h2>
+                <p>Afstand: {{location.distance}}km</p>
+            </ion-item>
+        </ion-list>
+        <!--<ion-list>
+            <ion-item class="item-thumbnail-left" href="#/detail">
+                <h2><b>hoi</b></h2>
+                <p>Afstand: km</p>
+            </ion-item>
+        </ion-list>-->
+    </ion-content>
+</ion-view>

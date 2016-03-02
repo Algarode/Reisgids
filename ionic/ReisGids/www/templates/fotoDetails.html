@@ -1,0 +1,21 @@
+<ion-view title="Foto details">
+    <ion-content overflow-scroll="true" padding="'true'" class="has-header">
+        <div style="line-height: 250px; border: 1px solid rgb(238, 238, 238); border-radius: 3px; text-align: center; width: 100%; height: auto; background-color: rgb(255, 255, 255);">
+            <img class="icon ion-image" ng-show="imgURI !== undefined" src="{{imageURI}}">
+            <img class="icon ion-image" ng-show="imgURI === undefined" ng-src="http://placehold.it/300x300">
+        </div>
+        <button class="button button-energized button-block button-small" ng-click="takePhoto()">Maak foto</button>
+        <form class="list">
+            <div class="spacer" style="width: 285px; height: 24px;"></div>
+            <label class="item item-input">
+                <span class="input-label">Text</span><textarea placeholder=""> </textarea>
+            </label>
+        </form>
+        <form action="http://145.93.136.207:55072/Reisgids/webresources/com.smhtml.reisgids.file/upload/stefan@bogaard.nl" method="post" enctype="multipart/form-data">
+            <img src="{{lastPhoto}}" style="max-width: 100%">
+            <!--<a href="#/detail" class="button button-balanced button-block">Uploaden</a>-->
+            <input type="file" name="file" value="{{imageData}}">
+            <input type="submit" value="Upload!"/>
+        </form>
+    </ion-content>
+</ion-view>
