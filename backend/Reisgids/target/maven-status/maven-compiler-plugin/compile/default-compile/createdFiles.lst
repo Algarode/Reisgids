@@ -1,0 +1,13 @@
+com/smhtml/reisgids/Bezienswaardigheid.class
+com/smhtml/reisgids/service/BezienswaardigheidFacadeREST.class
+com/smhtml/reisgids/Userfoto_.class
+com/smhtml/reisgids/service/AppuserFacadeREST.class
+com/smhtml/reisgids/Appuser.class
+servlets/UploadingServlet.class
+com/smhtml/reisgids/Userfoto.class
+com/smhtml/reisgids/service/CORSFilter.class
+com/smhtml/reisgids/service/ApplicationConfig.class
+com/smhtml/reisgids/service/AbstractFacade.class
+com/smhtml/reisgids/service/UploadFileService.class
+com/smhtml/reisgids/Bezienswaardigheid_.class
+com/smhtml/reisgids/Appuser_.class
